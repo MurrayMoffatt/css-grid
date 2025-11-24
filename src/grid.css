@@ -1,0 +1,116 @@
+/* Box sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Remove gap modifier */
+.row-no-gap {
+  gap: 0;
+}
+
+/* Base column styles */
+[class*="col-"] {
+  position: relative;
+  width: 100%;
+}
+
+/* Small devices (mobile, default) */
+.row .col-sm-1 { flex: 0 0 calc(8.333333% - 27.5px); }
+.row .col-sm-2 { flex: 0 0 calc(16.666667% - 25px); }
+.row .col-sm-3 { flex: 0 0 calc(25% - 22.5px); }
+.row .col-sm-4 { flex: 0 0 calc(33.333333% - 20px); }
+.row .col-sm-5 { flex: 0 0 calc(41.666667% - 17.5px); }
+.row .col-sm-6 { flex: 0 0 calc(50% - 15px); }
+.row .col-sm-7 { flex: 0 0 calc(58.333333% - 12.5px); }
+.row .col-sm-8 { flex: 0 0 calc(66.666667% - 10px); }
+.row .col-sm-9 { flex: 0 0 calc(75% - 7.5px); }
+.row .col-sm-10 { flex: 0 0 calc(83.333333% - 5px); }
+.row .col-sm-11 { flex: 0 0 calc(91.666667% - 2.5px); }
+.row .col-sm-12 { flex: 0 0 100%; }
+
+.row-no-gap .col-sm-1 { flex: 0 0 8.333333%; }
+.row-no-gap .col-sm-2 { flex: 0 0 16.666667%; }
+.row-no-gap .col-sm-3 { flex: 0 0 25%; }
+.row-no-gap .col-sm-4 { flex: 0 0 33.333333%; }
+.row-no-gap .col-sm-5 { flex: 0 0 41.666667%; }
+.row-no-gap .col-sm-6 { flex: 0 0 50%; }
+.row-no-gap .col-sm-7 { flex: 0 0 58.333333%; }
+.row-no-gap .col-sm-8 { flex: 0 0 66.666667%; }
+.row-no-gap .col-sm-9 { flex: 0 0 75%; }
+.row-no-gap .col-sm-10 { flex: 0 0 83.333333%; }
+.row-no-gap .col-sm-11 { flex: 0 0 91.666667%; }
+.row-no-gap .col-sm-12 { flex: 0 0 100%; }
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .row .col-md-1 { flex: 0 0 calc(8.333333% - 27.5px); }
+  .row .col-md-2 { flex: 0 0 calc(16.666667% - 25px); }
+  .row .col-md-3 { flex: 0 0 calc(25% - 22.5px); }
+  .row .col-md-4 { flex: 0 0 calc(33.333333% - 20px); }
+  .row .col-md-5 { flex: 0 0 calc(41.666667% - 17.5px); }
+  .row .col-md-6 { flex: 0 0 calc(50% - 15px); }
+  .row .col-md-7 { flex: 0 0 calc(58.333333% - 12.5px); }
+  .row .col-md-8 { flex: 0 0 calc(66.666667% - 10px); }
+  .row .col-md-9 { flex: 0 0 calc(75% - 7.5px); }
+  .row .col-md-10 { flex: 0 0 calc(83.333333% - 5px); }
+  .row .col-md-11 { flex: 0 0 calc(91.666667% - 2.5px); }
+  .row .col-md-12 { flex: 0 0 100%; }
+
+  .row-no-gap .col-md-1 { flex: 0 0 8.333333%; }
+  .row-no-gap .col-md-2 { flex: 0 0 16.666667%; }
+  .row-no-gap .col-md-3 { flex: 0 0 25%; }
+  .row-no-gap .col-md-4 { flex: 0 0 33.333333%; }
+  .row-no-gap .col-md-5 { flex: 0 0 41.666667%; }
+  .row-no-gap .col-md-6 { flex: 0 0 50%; }
+  .row-no-gap .col-md-7 { flex: 0 0 58.333333%; }
+  .row-no-gap .col-md-8 { flex: 0 0 66.666667%; }
+  .row-no-gap .col-md-9 { flex: 0 0 75%; }
+  .row-no-gap .col-md-10 { flex: 0 0 83.333333%; }
+  .row-no-gap .col-md-11 { flex: 0 0 91.666667%; }
+  .row-no-gap .col-md-12 { flex: 0 0 100%; }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .row .col-lg-1 { flex: 0 0 calc(8.333333% - 27.5px); }
+  .row .col-lg-2 { flex: 0 0 calc(16.666667% - 25px); }
+  .row .col-lg-3 { flex: 0 0 calc(25% - 22.5px); }
+  .row .col-lg-4 { flex: 0 0 calc(33.333333% - 20px); }
+  .row .col-lg-5 { flex: 0 0 calc(41.666667% - 17.5px); }
+  .row .col-lg-6 { flex: 0 0 calc(50% - 15px); }
+  .row .col-lg-7 { flex: 0 0 calc(58.333333% - 12.5px); }
+  .row .col-lg-8 { flex: 0 0 calc(66.666667% - 10px); }
+  .row .col-lg-9 { flex: 0 0 calc(75% - 7.5px); }
+  .row .col-lg-10 { flex: 0 0 calc(83.333333% - 5px); }
+  .row .col-lg-11 { flex: 0 0 calc(91.666667% - 2.5px); }
+  .row .col-lg-12 { flex: 0 0 100%; }
+
+  .row-no-gap .col-lg-1 { flex: 0 0 8.333333%; }
+  .row-no-gap .col-lg-2 { flex: 0 0 16.666667%; }
+  .row-no-gap .col-lg-3 { flex: 0 0 25%; }
+  .row-no-gap .col-lg-4 { flex: 0 0 33.333333%; }
+  .row-no-gap .col-lg-5 { flex: 0 0 41.666667%; }
+  .row-no-gap .col-lg-6 { flex: 0 0 50%; }
+  .row-no-gap .col-lg-7 { flex: 0 0 58.333333%; }
+  .row-no-gap .col-lg-8 { flex: 0 0 66.666667%; }
+  .row-no-gap .col-lg-9 { flex: 0 0 75%; }
+  .row-no-gap .col-lg-10 { flex: 0 0 83.333333%; }
+  .row-no-gap .col-lg-11 { flex: 0 0 91.666667%; }
+  .row-no-gap .col-lg-12 { flex: 0 0 100%; }
+}
+
+/* Alignment helpers */
+.row-center {
+  justify-content: center;
+}
+
+.row-middle {
+  align-items: center;
+}

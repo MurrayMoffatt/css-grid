@@ -1,7 +1,7 @@
 # CSS Grid
 Twelve column grid built with Flexbox.
 
-##Features
+## Features
 * Three responsive breakpoints (small, medium and large)
 * Optional gutters
 * Helper classes to vertically align center and horizontally center
